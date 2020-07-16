@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='apology.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='loggedin_apology.css') }}">
+
+
+
+{% endblock %}
+
+{% block content %}
+
+    <ul class="navbar">
+        <li><a href="/search">Search</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+
+    <h2>{{ bottom }}</h2>
+
+
+
+{% endblock %}

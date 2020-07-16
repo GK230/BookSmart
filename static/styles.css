@@ -1,0 +1,39 @@
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5em;
+}
+
+p {
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-family: 'Sen', sans-serif;
+    font-size: 3em;
+}
+
+.navbar {
+    position: absolute;
+    left: 140vh;
+    top: 10%;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    border-style: ridge;
+    padding: 10px;
+    
+}

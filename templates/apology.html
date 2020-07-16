@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='apology.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+{% endblock %}
+
+{% block content %}
+
+    <ul class="navbar">
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+    </ul>
+
+    <img class="sorryimg" src="./static/images/apology.jpg">
+    <h2>{{ bottom }}</h2>
+
+
+
+{% endblock %}

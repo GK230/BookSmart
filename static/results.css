@@ -1,0 +1,46 @@
+body {
+    background-image: none;
+    background-color: antiquewhite;
+    font-size: 14px;
+}
+
+h2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+.table {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+th {
+    text-decoration: underline;
+}
+
+.result {
+    color: black;
+    font-size: 1em;
+    border: none;
+    font-weight: 600;
+}
+
+.result:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.result:visited {
+    color: blue;
+}
+
+
+
+

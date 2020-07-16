@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+<ul class="navbar">
+    <li><a href="/search">Search</a></li>
+    <li><a href="/logout">Log out</a></li>
+</ul>
+
+<div class="book">
+
+    <h2 class="title">{{ book_info[0] }}</h2>
+    <h3 class="author">by {{ book_info[1] }}</h3>
+    <h4 class="year">{{ book_info[2] }}</43>
+    <h5 class="isbn">ISBN: {{ book_info[3] }}</h5>
+
+
+</div>
+
+<p class="gr">good<span class="reads">reads:</span></p>
+<p class="ar">Average rating: {{ ar }}</p>
+<P class="nr">Number of ratings: {{ nr }}</P>
+
+
+<table class="reviews">
+    <tr>
+        <th>BookSmart Reviews:</th>
+    </tr>
+    {% for review in reviews %}
+
+    <tr>
+        <td><q>{{ review }}</q></td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+<div class="review">
+    <p class="give">Submit a reivew!</p>
+</div>
+<form class="opinion" action="/book/<isbn>" method="POST">
+<input type="hidden" name="book_id" value="{{ book_info[4] }}"/>
+
+<p class="rate">Rating:</p>
+
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+</fieldset>
+
+<div class="descriptionarea">
+    <span class="namefortxtarea">Review:</span>
+    <textarea name="book_review"></textarea>
+    <span class="buttonfortxtarea"><button class= "btn btn-mini description_edit">Edit</button><button class= "btn btn-mini description_submit">Submit</button></span>
+</div>
+</div>
+
+
+
+</form>
+
+  
+  
+
+
+{% endblock %}

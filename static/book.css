@@ -1,0 +1,173 @@
+body {
+    background-image: none;
+    background-color: rgb(201, 216, 212);
+    font-size: 14px;
+}
+
+.book {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    line-height: 1em;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5em;
+}
+
+.author {
+    margin-left: 5%;
+    font-size: 3em;
+}
+
+.year {
+    margin-left: 35%;
+    font-size: 2em;
+}
+
+.isbn {
+    font-size: 1em;
+}
+
+.gr {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+
+.ar, .nr {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+.nr {
+    top: 35%;
+}
+
+.reads {
+    font-weight: 600;
+}
+
+.reviews {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    font-size: 1.5em;
+    width: 35%;
+}
+
+th {
+    text-align: left;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+td {
+    padding: 2%;
+}
+
+.give {
+    position: absolute;
+    top: 63%;
+    left: 30%;
+    font-size: 3em;
+    display: inline;
+}
+
+.rate, .write {
+    position: absolute;
+    top: 73%;
+    left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.write {
+    top: 80%;
+}
+
+.descriptionarea {
+    position: absolute;
+    top: 82%;
+    left: 30%;
+}
+
+
+
+
+
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap.css');
+
+.descriptionarea {
+   min-width: 490px;
+    display: inline-block;
+}
+
+.descriptionarea textarea{
+    width: 490px;
+    height: 20px;
+}
+
+.descriptionarea span.namefortxtarea{
+    display: block;
+    text-align: left;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descriptionarea span.buttonfortxtarea{
+    display: block;
+    text-align: right;
+}
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+  position: absolute;
+  top: 77.5%;
+  left: 37%;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+

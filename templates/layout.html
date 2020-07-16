@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='main.css') }}">
+        {% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookSmart</title>
+    </head>
+    <body>
+        <img class="logo" src="../static/images/logo.png">
+        {% block content %}{% endblock %}
+
+       
+    </body>
+    </html>

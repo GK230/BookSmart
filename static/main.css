@@ -1,0 +1,13 @@
+body {
+    background-image: url("../static/images/books.jpg");
+    font-size: 14px;
+
+}
+
+img.logo {
+    width: 35%;
+    position: absolute;
+    top: -20%;
+}
+
+
