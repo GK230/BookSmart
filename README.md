@@ -6,8 +6,6 @@ https://www.youtube.com/watch?v=VCxzmaSKGIc
 
 # BookSmart
 
-Web Programming with Python and JavaScript
-
 This is a book review website. Users can register, login, and then search for a book using title, author or isbn. They will then be taken to a ‘search results’ page. After clicking on any book title, they will be taken to a ‘book page’ where there are further details about the book, including information from goodreads. They will also be able to leave a review on this page. The project also includes an api. When calls to the api are made, using an isbn number, users will be able to access details about the relevant book.
 
 *application.py*
