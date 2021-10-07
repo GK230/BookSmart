@@ -10,10 +10,8 @@ https://www.youtube.com/watch?v=VCxzmaSKGIc
 
 This project was for the CS50 Web Programming course, there were a number of requirements for students to complete.
 
-## Improvements
 I think I would change the CSS for this app, I was going for a kind of elegant, old school look, but I'm not sure if it's a good look.
 
-## Upcoming features
 I think a chat feature is a good idea, where users can share reviews and comment on them.
 
 
